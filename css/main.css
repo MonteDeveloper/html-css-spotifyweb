@@ -42,9 +42,14 @@ html{
     width: 95%;
 }
 
+.responsiveVisibility{
+    display: none;
+}
+
 .sideBar{
     width: var(--sideBarWidth);
     height: calc(100vh - var(--playerBoxHeight));
+    color: white;
 }
 
 #playerBox{
@@ -99,8 +104,20 @@ nav ul{
     font-size: .8rem;
 }
 
+a{
+    color: #787878;
+    text-decoration: none;
+}
+
+
 .card{
     width: calc(50% - var(--tiny));
+}
+
+.fa-plus{
+    color: black;
+    background-color: #a1a1a1;
+    padding: 5px;
 }
 
 /* ? TEXTS---------------------------------------- */
@@ -125,15 +142,9 @@ nav ul{
 .sectionTitle{
     margin: 2rem 0;
 }
-
 /* ? IMAGES--------------------------------------- */
 img{
     width: 100%;
-}
-
-/* risolvo il problema del file immagine non centrato */
-img[alt="download"]{
-    margin-left: -5%; 
 }
 
 img[alt="profile"]{
@@ -146,6 +157,15 @@ img[alt="artistCover"]{
     clip-path: circle();
 }
 
+.sideBar img{
+    width: 30px;
+}
+
+/* risolvo il problema del file immagine non centrato */
+img[alt="download"]{
+    margin-left: -5%; 
+    width: 18px;
+}
 
 /* ? BUTTONS-------------------------------------- */
 button{
@@ -303,3 +323,47 @@ button:hover, li a:hover{
 
 /* tablet: dai 768px in giù
 mobile: dai 480px in giù */
+
+@media screen and (min-width: 480px){
+    .card{
+        width: calc(25% - var(--tiny));
+        font-size: .7em;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .card{
+        width: 15%;
+        font-size: .7em;
+    }
+
+    /* responsive sidebar------------------- */
+    .sideBar{
+        width: 220px;
+        font-size: .8em;
+    }
+
+    .sideBar > div{
+        align-items: start;
+        padding-left: 20px;
+    }
+
+    main, .upgradeBox{
+        width: calc(100% - 220px);
+    }
+
+    .upgradeBox{
+        left: 220px;
+    }
+
+    .responsiveVisibility{
+        display: block;
+    }
+
+    img[alt="logo"]{
+        content: url("../img/logo.svg");
+        width: 200px;
+        padding: .5rem 0;
+    }
+    /* ------------------------------------ */
+}
