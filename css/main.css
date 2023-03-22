@@ -30,10 +30,15 @@ html{
 }
 
 /* * BOXES & MY CLASSES----------------------------- */
-.mainResponsiveBox{
-    width: 80%;
+.mainContainer{
+    height: calc(100vh - var(--upgradeBoxHeight) - var(--playerBoxHeight));
+    overflow: auto;
+    margin-top: var(--upgradeBoxHeight);
+}
+
+.centeredBox{
     margin: auto;
-    max-width: 1000px;
+    width: 95%;
 }
 
 .sideBar{
@@ -93,8 +98,8 @@ nav ul{
     font-size: .8rem;
 }
 
-.mainContainer{
-    margin-top: var(--upgradeBoxHeight);
+.card{
+    width: calc(50% - var(--tiny));
 }
 
 /* ? TEXTS---------------------------------------- */
@@ -116,6 +121,10 @@ nav ul{
     font-size: var(--extraSmall);
 }
 
+.sectionTitle{
+    margin: 2rem 0;
+}
+
 /* ? IMAGES--------------------------------------- */
 img{
     width: 100%;
@@ -130,6 +139,10 @@ img[alt="profile"]{
     clip-path: circle();
     background-color: #7f7f7f;
     object-fit: contain;
+}
+
+img[alt="artistCover"]{
+    clip-path: circle();
 }
 
 
