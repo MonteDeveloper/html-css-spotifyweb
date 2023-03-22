@@ -386,7 +386,7 @@ mobile: dai 480px in giù */
     }
 
     img[alt="logo"]{
-        content: url("../img/logo.svg");
+        content: url("../../img/logo.svg");
         width: 200px;
         padding: .5rem 0;
     }
