@@ -120,6 +120,26 @@ a{
     padding: 5px;
 }
 
+/* SLIDER CSS------------------------------------- */
+.slider {
+    width: 100%;
+    height: 5px;
+    margin: 10px 0;
+    background-color: #5c5c5c;
+    border-radius: 20px;
+    position: relative;
+}
+
+.slider div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 20px;
+}
+
 /* ? TEXTS---------------------------------------- */
 #playerBox .leftBox h4{
     font-size: var(--extraSmall);
@@ -328,6 +348,11 @@ mobile: dai 480px in giù */
     .card{
         width: calc(25% - var(--tiny));
         font-size: .7em;
+    }
+
+    #playerBox .leftBox :nth-child(3){
+        flex-direction: row;
+        width: 50%;
     }
 }
 
