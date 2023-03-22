@@ -32,25 +32,27 @@ html{
     max-width: 1000px;
 }
 
-/* header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 999;
-	height: var( --headerHeight);
+.sideBar{
+    width: 50px;
+    height: 100vh;
 }
-
-main::before{
-    content:'';
-    display:block;
-    height: var( --headerHeight);
-} */
 
 /* ? IMAGES--------------------------------------- */
 img{
     width: 100%;
 }
+
+/* risolvo il problema del file immagine non centrato */
+img[alt="download"]{
+    margin-left: -5%; 
+}
+
+img[alt="profile"]{
+    clip-path: circle();
+    background-color: #7f7f7f;
+    object-fit: contain;
+}
+
 
 /* ? BUTTONS-------------------------------------- */
 button{
@@ -154,7 +156,7 @@ button:hover, li a:hover{
 
 /* ? BG COLORS------------------------------------ */
 .bgWhite        { background-color: white; }
-.bgBlack        { background-color: black; }
+.bgBlack        { background-color: #000000; }
 .bgBlue         { background-color: #0083fd; }
 .bgGreen        { background-color: #008000; }
 .bgPurple       { background-color: #8a2be2; }
@@ -165,7 +167,7 @@ button:hover, li a:hover{
 .bgGrey         { background-color: #f5f5f5; }
 .bgTeal         { background-color: #008080; } 
 .bgBrown        { background-color: #a52a2a; }
-.bgClearBlack   { background-color: #363636; } 
+.bgClearBlack   { background-color: #1b1f27; } 
 .bgSkyblue      { background-color: #b3dcff; }
 .bgPeriwinkle   { background-color: #9593e6; }
 
