@@ -16,6 +16,7 @@
     --big: 5rem;
     --huge: 10rem;
 	--playerBoxHeight: 100px;
+    --sideBarWidth: 50px
 }
 
 body{
@@ -35,7 +36,7 @@ html{
 }
 
 .sideBar{
-    width: 50px;
+    width: var(--sideBarWidth);
     height: calc(100vh - var(--playerBoxHeight));
 }
 
@@ -59,6 +60,30 @@ html{
 #playerBox .centerBox .topBox{
     width: 160px;
     margin: auto;
+}
+
+header, main{
+    float: left;
+}
+
+main{
+    width: calc(100% - var(--sideBarWidth));
+    min-height: calc(100vh - var(--playerBoxHeight));
+}
+
+.upgradeBox, .upgradeBox button{
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.upgradeBox{
+    position: fixed;
+    width: calc(100% - var(--sideBarWidth));
+    top: 0;
+    left:var(--sideBarWidth);
+}
+
+.upgradeBox button{
+    margin-right: 10px;
 }
 
 /* ? TEXTS---------------------------------------- */
@@ -100,9 +125,9 @@ img[alt="profile"]{
 /* ? BUTTONS-------------------------------------- */
 button{
     border: none;
-    padding: .5rem 3rem;
+    padding: .7rem 2rem;
     border-radius: 20px;
-    font-size: 1rem;
+    font-size: .7rem;
     transition: shadow-box, opacity .2s;
 }
 
@@ -198,6 +223,7 @@ button:hover, li a:hover{
 
 /* ? BORDER--------------------------------------- */
 .grayBorder { border: 2px solid #ededed; }
+.whiteBorder { border: 1px solid white; }
 
 /* ? BG COLORS------------------------------------ */
 .bgWhite        { background-color: white; }
@@ -219,6 +245,7 @@ button:hover, li a:hover{
 /* UTILITY---------------------------------------- */
 .textAlCenter{ text-align: center; }
 .textAlStart{ text-align: start; }
+.textAlEnd{ text-align: end; }
 .textCanceled{ text-decoration: line-through; }
 .textUnderline{ text-decoration: underline;}
 .textColorRed{ color: red; }
@@ -243,6 +270,7 @@ button:hover, li a:hover{
 .smallerText{ font-size: .6em; }
 .largerText{ font-size: 1.5em;}
 .tinyText{ font-weight: 400;}
+.verticalAlMiddle{ vertical-align: middle;}
 
 
 /* !RESPONSIVE------------------------------------- */
