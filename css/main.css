@@ -16,7 +16,8 @@
     --big: 5rem;
     --huge: 10rem;
 	--playerBoxHeight: 100px;
-    --sideBarWidth: 50px
+    --sideBarWidth: 50px;
+    --upgradeBoxHeight: 80px;
 }
 
 body{
@@ -25,7 +26,7 @@ body{
 }
 
 html{
-    playBoxscroll-behavior: smooth; /* rendo smooth l'anchor */
+    scroll-behavior: smooth; /* rendo smooth l'anchor */
 }
 
 /* * BOXES & MY CLASSES----------------------------- */
@@ -80,10 +81,20 @@ main{
     width: calc(100% - var(--sideBarWidth));
     top: 0;
     left:var(--sideBarWidth);
+    height: var(--upgradeBoxHeight);
 }
 
 .upgradeBox button{
     margin-right: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    font-size: .8rem;
+}
+
+.mainContainer{
+    margin-top: var(--upgradeBoxHeight);
 }
 
 /* ? TEXTS---------------------------------------- */
@@ -102,7 +113,7 @@ main{
 }
 
 #playerBox .rightBox i{
-    font-size: .8rem;
+    font-size: var(--extraSmall);
 }
 
 /* ? IMAGES--------------------------------------- */
@@ -270,6 +281,7 @@ button:hover, li a:hover{
 .smallerText{ font-size: .6em; }
 .largerText{ font-size: 1.5em;}
 .tinyText{ font-weight: 400;}
+.boldText{ font-weight: bold;}
 .verticalAlMiddle{ vertical-align: middle;}
 
 
