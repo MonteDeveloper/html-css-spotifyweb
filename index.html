@@ -5,17 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>My Spotify Web</title>
 </head>
 <body class="bgClearBlack">
     <header>
+        <!-- BARRA LATERALE SINISTRA -->
         <div class="sideBar bgBlack flexCol flexMainBetween">
+            <!-- parte SUPERIORE -->
             <div class="flexCol flexCrossCenter tinyGap tinyTopPadding">
                 <div class="col60"><img src="./img/logo-small.svg" alt="logo"></div>
                 <div class="col60"><img src="./img/home.svg"       alt="home"></div>
                 <div class="col60"><img src="./img/search.svg"     alt="search"></div>
                 <div class="col60"><img src="./img/libreria.svg"   alt="library"></div>
             </div>
+
+            <!-- parte INFERIORE -->
             <div class="flexCol flexCrossCenter tinyGap">
                 <div class="col30"><img src="./img/download.svg"   alt="download"></div>
                 <div class="col50"><img src="./img/profile.svg"    alt="profile"></div>
@@ -23,12 +28,60 @@
         </div>
     </header>
 
-    <body>
-        
-    </body>
+    <main>
+        <!-- <div class="upgradeBox">
+            <button>EFFETTUA L'UPGRADE</button>
+        </div> -->
+    </main>
 
+    <!-- PLAYER -->
     <footer>
+        <div class="bgGrey textColorWhite flexRow flexCrossCenter flexMainBetween tinyColPadding" id="playerBox">
+            <!-- parte di SINISTRA -->
+            <div class="leftBox col30 flexRow flexCrossCenter tinyGap">
+                <div class="col20"><img src="./img/sinister.jpeg" alt="playSong"></div>
+                <div class="col40">
+                    <h4>Sinister</h4>
+                    <h5 class="textColorGrey">Nome Artista</h5>
+                </div>
+                <div class="flexRow flexWrap col10 tinyGap">
+                    <i class="fa-regular fa-heart textColorGrey"></i>
+                    <i class="fa-regular fa-folder textColorGrey"></i>
+                </div>
+            </div>
 
+            <!-- parte CENTRALE -->
+            <div class="centerBox col33 flexCol flexMainCenter tinyGap">
+                <!-- pulsanti -->
+                <div class="topBox flexRow flexMainBetween flexCrossCenter">
+                    <div class="flexRow flexMainBetween col25">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                    </div>
+
+                    <i class="fa-solid fa-circle-play"></i>
+
+                    <div class="flexRow flexMainBetween col25">
+                        <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                </div>
+                <!-- barra canzone -->
+                <div class="flexRow flexMainBetween flexCrossCenter tinyGap">
+                    <span>0:25</span>
+                    <input type="range" name="playerBar" id="playerBar" class="col100">
+                    <span>4:35</span>
+                </div>
+            </div>
+
+            <!-- parte di DESTRA -->
+            <div class="rightBox col30 flexRow flexMainCenter tinyGap">
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" name="soundBar" id="soundBar">
+            </div>
+        </div>
     </footer>
 </body>
 </html>

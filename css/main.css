@@ -8,12 +8,14 @@
 }
 
 :root {
+    --micro: .2rem;
     --tiny: .5rem;
+    --extraSmall: .8rem;
     --small: 1rem;
     --medium: 3rem;
     --big: 5rem;
     --huge: 10rem;
-	--headerHeight: 70px;
+	--playerBoxHeight: 100px;
 }
 
 body{
@@ -22,7 +24,7 @@ body{
 }
 
 html{
-    scroll-behavior: smooth; /* rendo smooth l'anchor*/
+    playBoxscroll-behavior: smooth; /* rendo smooth l'anchor */
 }
 
 /* * BOXES & MY CLASSES----------------------------- */
@@ -34,7 +36,48 @@ html{
 
 .sideBar{
     width: 50px;
-    height: 100vh;
+    height: calc(100vh - var(--playerBoxHeight));
+}
+
+#playerBox{
+    height: var(--playerBoxHeight);
+    overflow: hidden; /* se sbordano elementi evito scrollbar inutili */
+}
+
+#playerBox .leftBox, #playerBox .rightBox{
+    max-width: 300px;
+}
+
+.fa-circle-play{
+    font-size: 1.5rem;
+}
+
+#soundBar{
+    width: 60%;
+}
+
+#playerBox .centerBox .topBox{
+    width: 160px;
+    margin: auto;
+}
+
+/* ? TEXTS---------------------------------------- */
+#playerBox .leftBox h4{
+    font-size: var(--extraSmall);
+}
+
+#playerBox .centerBox span{
+    font-size: var(--tiny);
+}
+
+#playerBox .leftBox h5{
+    font-size: var(--tiny);
+    font-weight: 800;
+    line-height: var(--extraSmall);
+}
+
+#playerBox .rightBox i{
+    font-size: .8rem;
 }
 
 /* ? IMAGES--------------------------------------- */
@@ -72,6 +115,8 @@ button:hover, li a:hover{
 
 /* PADDING---------------------------------------- */
 .tinyTopPadding     { padding-top: var(--tiny); }
+.tinyPadding        { padding: var(--tiny);}
+.tinyColPadding     { padding: 0 var(--tiny);}
 
 .smallPadding       { padding: var(--small);}
 .smallRowPadding    { padding-top: var(--small); padding-bottom: var(--small); }
@@ -164,7 +209,7 @@ button:hover, li a:hover{
 .bgRed          { background-color: #fe0100; }
 .bgPink         { background-color: #ffc0cb; }
 .bgYellow       { background-color: #ffff00; }
-.bgGrey         { background-color: #f5f5f5; }
+.bgGrey         { background-color: #2c2c2c; }
 .bgTeal         { background-color: #008080; } 
 .bgBrown        { background-color: #a52a2a; }
 .bgClearBlack   { background-color: #1b1f27; } 
@@ -177,7 +222,7 @@ button:hover, li a:hover{
 .textCanceled{ text-decoration: line-through; }
 .textUnderline{ text-decoration: underline;}
 .textColorRed{ color: red; }
-.textColorGrey{ color: #516170; }
+.textColorGrey{ color: #787878; }
 .textColorGreen{ color: #4ac801; }
 .textColorWhite{ color: white; }
 .textColorBlue{ color: #0083fd; }
