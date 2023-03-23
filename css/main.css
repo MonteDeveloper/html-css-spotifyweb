@@ -31,9 +31,9 @@ html{
 
 /* * BOXES & MY CLASSES----------------------------- */
 .mainContainer{
-    height: calc(100vh - var(--upgradeBoxHeight) - var(--playerBoxHeight));
+    height: calc(100vh - var(--playerBoxHeight));
     overflow: auto;
-    margin-top: var(--upgradeBoxHeight);
+    padding-top: var(--upgradeBoxHeight);
     padding-bottom: 2rem;
 }
 
@@ -50,6 +50,7 @@ html{
     width: var(--sideBarWidth);
     height: calc(100vh - var(--playerBoxHeight));
     color: white;
+    overflow: hidden;
 }
 
 #playerBox{
@@ -96,7 +97,7 @@ main{
 }
 
 .upgradeBox button{
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 nav ul{
@@ -386,7 +387,7 @@ mobile: dai 480px in giù */
     }
 
     img[alt="logo"]{
-        content: url("../../img/logo.svg");
+        content: url("../img/logo.svg");
         width: 200px;
         padding: .5rem 0;
     }
