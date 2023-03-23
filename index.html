@@ -33,8 +33,10 @@
                 <div class="responsiveVisibility tinyTopPadding">
                     <div class="flexCol tinyGap">
                         <h4>PLAYLIST</h4>
-                        <div class="flexRow tinyGap">
-                            <i class="fa-solid fa-plus"></i>
+                        <div class="flexRow flexCrossCenter tinyGap">
+                            <div class="plusBox">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
                             <a href="#">Crea Playlist</a>
                         </div>
                         <a href="#">Nome Playlist</a>
@@ -166,8 +168,8 @@
     <footer>
         <div class="bgGrey textColorWhite flexRow flexCrossCenter flexMainBetween tinyColPadding" id="playerBox">
             <!-- parte di SINISTRA -->
-            <div class="leftBox col30 flexRow flexCrossCenter tinyGap">
-                <div class="col20"><img src="./img/sinister.jpeg" alt="playSong"></div>
+            <div class="leftBox flexRow flexCrossCenter tinyGap">
+                <img src="./img/sinister.jpeg" alt="playSong">
                 <div class="col40">
                     <h4>Sinister</h4>
                     <h5 class="textColorGrey">Nome Artista</h5>
@@ -179,7 +181,7 @@
             </div>
 
             <!-- parte CENTRALE -->
-            <div class="centerBox col33 flexCol flexMainCenter tinyGap">
+            <div class="centerBox col50 flexCol flexMainCenter tinyGap">
                 <!-- pulsanti -->
                 <div class="topBox flexRow flexMainBetween flexCrossCenter">
                     <div class="flexRow flexMainBetween col25">
@@ -205,12 +207,14 @@
             </div>
 
             <!-- parte di DESTRA -->
-            <div class="rightBox col30 flexRow flexMainEnd flexCrossCenter tinyGap">
-                <i class="fa-solid fa-list-ul"></i>
-                <i class="fa-solid fa-desktop"></i>
-                <i class="fa-solid fa-volume-high"></i>
-                <div class="slider col50">
-                    <div></div>
+            <div class="rightBox flexRow flexMainEnd flexCrossCenter tinyGap">
+                <i class="fa-solid fa-list-ul responsiveVisibility"></i>
+                <i class="fa-solid fa-desktop responsiveVisibility"></i>
+                <div class="flexColRev flexMainBetween flexCrossCenter">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <div class="slider">
+                        <div></div>
+                    </div>
                 </div>
             </div>
         </div>
