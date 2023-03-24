@@ -108,6 +108,7 @@ main{
     left:var(--sideBarWidth);
     height: var(--upgradeBoxHeight);
     pointer-events: none;
+    z-index: 999;
 }
 
 .upgradeBox button{
@@ -602,7 +603,7 @@ mobile: dai 480px in giù */
 }
 
 @media screen and (min-width: 1100px) {
-    body{
+    .mainContainer{
         font-size: 1.2em !important;
     }
 }
