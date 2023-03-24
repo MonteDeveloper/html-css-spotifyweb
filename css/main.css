@@ -258,9 +258,30 @@ button{
 
 /* ? HOVER---------------------------------------- */
 
-button:hover, li a:hover{
+button:hover{
     opacity: .7;
     cursor: pointer;
+}
+
+a:hover, footer .leftBox i:hover, footer .leftBox h5:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.sideBar a + img{
+    filter: brightness(70%);
+}
+
+.sideBar a:hover + img{
+    filter: brightness(100%);
+}
+
+.sideBar a:hover + div{
+    background-color: white;
+}
+
+footer .leftBox h5:hover{
+    text-decoration: underline;
 }
 
 /* PADDING---------------------------------------- */
@@ -301,15 +322,18 @@ button:hover, li a:hover{
 .flexRow            { display: flex; flex-direction: row; }
 .flexCol            { display: flex; flex-direction: column;}
 .flexColRev         { display: flex; flex-direction: column-reverse;}
+.flexRowRev         { display: flex; flex-direction: row-reverse;}
 .flexWrap           { flex-wrap: wrap;}
 /* main axis */
+.flexMainStart      { justify-content: start; }
 .flexMainCenter     { justify-content: center; }
 .flexMainEnd        { justify-content: flex-end; }
 .flexMainBetween    { justify-content: space-between; }
 .flexMainAround     { justify-content: space-around; }
 /* cross axis */
 .flexCrossCenter    { align-items: center;}
-.flexCrossStrslider divetch   { align-items: stretch;}
+.flexCrossStretch   { align-items: stretch;}
+.flexCrossStart     { align-items: start;}
 .flexCrossEnd       { align-items: end;}
 .flexCrossBaseline  { align-items: baseline;}
 /* gaps */
@@ -411,9 +435,8 @@ mobile: dai 480px in giù */
         font-size: .7em;
     }
 
-    #playerBox .leftBox :nth-child(3){
-        flex-direction: row;
-        width: 50%;
+    footer .leftBox, footer .rightBox{
+        width: 10%;
     }
 }
 
@@ -421,6 +444,11 @@ mobile: dai 480px in giù */
     .card{
         width: 15%;
         font-size: .7em;
+    }
+
+    #playerBox .leftBox :nth-child(3){
+        flex-direction: row;
+        width: 50%;
     }
 
     /* responsive sidebar------------------- */
@@ -443,7 +471,7 @@ mobile: dai 480px in giù */
     }
 
     .responsiveVisibility{
-        display: block !important;
+        display: contents !important;
     }
 
     img[alt="logo"]{
@@ -451,17 +479,12 @@ mobile: dai 480px in giù */
         width: 200px;
         padding: .5rem 0;
     }
-    /* ------------------------------------ */
-}
 
-@media screen and (min-width: 1100px) {
-    body{
-        font-size: 1.2em !important;
+    img[alt="playSong"]{
+        width: 60px;
     }
-}
 
-@media screen and (min-width: 620px){
-
+    /* SLIDER----------------------------- */
     footer .rightBox .slider{
         opacity: 100;
         position: static;
@@ -483,7 +506,13 @@ mobile: dai 480px in giù */
         flex-direction: row;
     }
 
-    footer .rightBox, footer .leftBox{
-        width: 33%;
+    footer .leftBox, footer .rightBox{
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    body{
+        font-size: 1.2em !important;
     }
 }

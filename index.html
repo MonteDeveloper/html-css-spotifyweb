@@ -17,29 +17,33 @@
                 <div class="col60 flexRow">
                     <img src="./img/logo-small.svg" alt="logo">
                 </div>
-                <div class="col60 flexRow flexCrossCenter tinyGap">
-                    <img src="./img/home.svg"       alt="home">
-                    <a class="responsiveVisibility">Home</a>
-                </div>
-                <div class="col60 flexRow flexCrossCenter tinyGap">
-                    <img src="./img/search.svg"     alt="search">
-                    <a class="responsiveVisibility">Cerca</a>
-                </div>
-                <div class="col60 flexRow flexCrossCenter tinyGap">
-                    <img src="./img/libreria.svg"   alt="library">
-                    <a class="responsiveVisibility">La tua libreria</a>
-                </div>
-
-                <h4>PLAYLIST</h4>
-                <div class="flexRow flexCrossCenter tinyGap">
-                    <div class="plusBox">
-                        <i class="fa-solid fa-plus"></i>
+                <nav class="flexCol">
+                    <div class="col100 flexRowRev flexCrossCenter flexMainStart tinyGap">
+                        <a class="responsiveVisibility">Home</a>
+                        <img src="./img/home.svg"       alt="home">
                     </div>
-                    <a href="#">Crea Playlist</a>
+                    <div class="col100 flexRowRev flexCrossCenter flexMainStart tinyGap">
+                        <a class="responsiveVisibility">Cerca</a>
+                        <img src="./img/search.svg"     alt="search">
+                    </div>
+                    <div class="col100 flexRowRev flexCrossCenter flexMainStart tinyGap">
+                        <a class="responsiveVisibility">La tua libreria</a>
+                        <img src="./img/libreria.svg"   alt="library">
+                    </div>
+                </nav>
+                
+                <div class="responsiveVisibility">
+                    <h4>PLAYLIST</h4>
+                    <div class="flexRowRev flexCrossCenter tinyGap">
+                        <a href="#">Crea Playlist</a>
+                        <div class="plusBox">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="responsiveVisibility tinyTopPadding col100 overflowAuto">
-                    <div class="flexCol tinyGap">
+                <div class="responsiveVisibility">
+                    <div class="tinyTopPadding col100 overflowAuto flexCol tinyGap tinyMinH">
                         <a href="#">Nome Playlist 1</a>
                         <a href="#">Nome Playlist 2</a>
                         <a href="#">Nome Playlist 3</a>
@@ -52,13 +56,14 @@
                         <a href="#">Nome Playlist 10</a>
                     </div>
                 </div>
+                
             </div>
 
             <!-- parte INFERIORE -->
             <div class="flexCol flexCrossCenter tinyGap">
-                <div class="flexRow flexCrossCenter tinyGap">
-                    <img src="./img/download.svg"   alt="download">
+                <div class="flexRowRev flexCrossCenter tinyGap">
                     <a href="#" class="responsiveVisibility">Installa app</a>
+                    <img src="./img/download.svg"   alt="download">
                 </div>
                 <hr class="col90 responsiveVisibility">
                 <div class="flexRow flexCrossCenter tinyGap">
@@ -171,11 +176,11 @@
 
     <!-- PLAYER -->
     <footer>
-        <div class="bgGrey textColorWhite flexRow flexCrossCenter flexMainBetween tinyColPadding" id="playerBox">
+        <div class="bgGrey textColorWhite flexRow flexCrossCenter flexMainBetween tinyColPadding smallGap" id="playerBox">
             <!-- parte di SINISTRA -->
             <div class="leftBox flexRow flexCrossCenter tinyGap">
                 <img src="./img/sinister.jpeg" alt="playSong">
-                <div class="col40">
+                <div>
                     <h4>Sinister</h4>
                     <h5 class="textColorGrey">Nome Artista</h5>
                 </div>
