@@ -107,10 +107,12 @@ main{
     top: 0;
     left:var(--sideBarWidth);
     height: var(--upgradeBoxHeight);
+    pointer-events: none;
 }
 
 .upgradeBox button{
     margin-right: 30px;
+    pointer-events: all;
 }
 
 nav ul{
