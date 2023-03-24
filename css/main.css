@@ -23,10 +23,18 @@
 body{
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 500;
+
+
+    /* fix safari vh */
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 html{
     scroll-behavior: smooth; /* rendo smooth l'anchor */
+
+    /* fix safari vh */
+    min-height: -webkit-fill-available;
 }
 
 /* * BOXES & MY CLASSES----------------------------- */
