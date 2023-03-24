@@ -50,7 +50,11 @@ html{
     width: 95%;
 }
 
-.responsiveVisibility{
+.responsiveVisibilityMobile{
+    display: none !important;
+}
+
+.responsiveVisibilityTabDesk{
     display: none !important;
 }
 
@@ -67,7 +71,8 @@ html{
 }
 
 #playerBox .leftBox, #playerBox .rightBox{
-    max-width: 300px;
+    
+    width: 30%;
 }
 
 .fa-circle-play{
@@ -79,12 +84,14 @@ html{
 }
 
 #playerBox .centerBox .topBox{
-    width: 160px;
+    min-width: 135px;
+    max-width: 160px;
+    width: 100%;
     margin: auto;
 }
 
 #playerBox .centerBox{
-    min-width: 160px;
+    min-width: 135px;
     max-width: 500px;
 }
 
@@ -329,7 +336,7 @@ img[alt="download"]{
 }
 
 img[alt="playSong"]{
-    width: 35px;
+    width: 30px;
 }
 
 /* ? BUTTONS-------------------------------------- */
@@ -523,6 +530,14 @@ mobile: dai 480px in giù */
     footer .leftBox, footer .rightBox{
         width: 10%;
     }
+
+    .responsiveVisibilityTabDesk{
+        display: block !important;
+    }
+
+    img[alt="playSong"]{
+        width: 50px;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -561,7 +576,7 @@ mobile: dai 480px in giù */
         left: 220px;
     }
 
-    .responsiveVisibility{
+    .responsiveVisibilityMobile{
         display: contents !important;
     }
 
@@ -569,10 +584,6 @@ mobile: dai 480px in giù */
         content: url("../img/logo.svg");
         width: 200px;
         padding: .5rem 0;
-    }
-
-    img[alt="playSong"]{
-        width: 60px;
     }
 
     /* SLIDER----------------------------- */
