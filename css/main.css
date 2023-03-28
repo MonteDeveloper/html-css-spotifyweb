@@ -23,23 +23,15 @@
 body{
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 500;
-
-
-    /* fix safari vh */
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
 }
 
 html{
     scroll-behavior: smooth; /* rendo smooth l'anchor */
-
-    /* fix safari vh */
-    min-height: -webkit-fill-available;
 }
 
 /* * BOXES & MY CLASSES----------------------------- */
 .mainContainer{
-    height: calc(100vh - var(--playerBoxHeight));
+    height: calc(100dvh - var(--playerBoxHeight));
     overflow: auto;
     padding-top: var(--upgradeBoxHeight);
     padding-bottom: 2rem;
@@ -60,7 +52,7 @@ html{
 
 .sideBar{
     width: var(--sideBarWidth);
-    height: calc(100vh - var(--playerBoxHeight));
+    height: calc(100dvh - var(--playerBoxHeight));
     color: white;
     overflow: hidden;
 }
@@ -101,7 +93,7 @@ header, main{
 
 main{
     width: calc(100% - var(--sideBarWidth));
-    min-height: calc(100vh - var(--playerBoxHeight));
+    min-height: calc(100dvh - var(--playerBoxHeight));
 }
 
 .upgradeBox, .upgradeBox button{
@@ -618,3 +610,4 @@ mobile: dai 480px in giù */
         font-size: 1.2em !important;
     }
 }
+  
